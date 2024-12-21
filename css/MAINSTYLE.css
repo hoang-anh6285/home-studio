@@ -1,0 +1,606 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=Merienda:wght@300..900&family=Splash&display=swap');
+body
+{
+	background-image: url();
+	
+	background-color:#212121;
+	color: antiquewhite;
+	font-size: 20px;
+	font-family: "Merienda";
+}
+@font-face {
+    font-family: 'Merienda';
+    src: url('Merienda-Regular.eot');
+    src: url('Merienda-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Merienda-Regular.woff2') format('woff2'),
+        url('Merienda-Regular.woff') format('woff'),
+        url('Merienda-Regular.ttf') format('truetype'),
+        url('Merienda-Regular.svg#Merienda-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merienda';
+    src: url('Merienda-Regular_1.eot');
+    src: url('Merienda-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Merienda-Regular_1.woff2') format('woff2'),
+        url('Merienda-Regular_1.woff') format('woff'),
+        url('Merienda-Regular_1.ttf') format('truetype'),
+        url('Merienda-Regular_1.svg#Merienda-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.mx-auto{ margin-left: auto; margin-right: auto}
+.mt-40{ margin-top: 40px}
+.py-40{padding-top:40px; padding-bottom: 40px }
+.p-100{ padding: 100px}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+p
+{
+	margin-top:0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 15px
+}
+h1
+{
+	font-size: 1rem;
+	margin-top:10px;
+}
+h5
+{
+	margin-bottom: 5px
+		
+}
+h1,h2,h3,h4,h6
+{
+	
+}
+.title-background
+{
+	border-radius: 10px;
+	background-color: #585858;
+}
+a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff
+	
+}
+.size-small
+{
+	font-size: 25px;
+	
+}
+.font-noman 
+{
+	font-family: "Splash";
+}
+.bold-text
+{
+  font-weight: bold;
+}
+.font-pro
+{
+	font-family: "Fruktur";
+	font-weight: 800;
+}
+*{box-sizing: border-box}/*giữ đường viền vào trong*/
+.container
+{
+	width: 90%;margin: auto; /*box container chiếm 90% độ rộng màng hình và nằm giữa*/
+}
+/* Cho máy tính để bàn */
+@media (max-width: 774px)
+{
+.icon-end{	white-space: nowrap; display: none
+	!important}
+.container
+	{
+		width: 90%; margin: auto 
+	}
+}
+.col-1{ width: 8.33%; }
+.col-2{width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+.col-0{width: 0%}
+
+/* Cho điện thoại di động */
+@media (max-width: 768px)
+{
+	.col-md-1 { width: 8.33%; }
+	.col-md-2{width: 16.66%}
+	.col-md-3{ width: 25%}
+	.col-md-4{ width: 33.33%}
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8{ width: 66.66%}
+	.col-md-9{ width: 75%}
+	.col-md-10{ width: 83.33%}
+	.col-md-11{ width: 91.66%}
+	.col-md-12{ width: 100%}
+	.col-md-0{width: 0%}
+}
+/* Cho máy tính bảng và laptop */
+@media (max-width: 1024px) and (min-width: 768px)
+{
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2{width: 16.66%}
+	.col-lg-3{ width: 25%}
+	.col-lg-4{ width: 33.33%}
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8{ width: 66.66%}
+	.col-lg-9{ width: 75%}
+	.col-lg-10{ width: 83.33%}
+	.col-lg-11{ width: 91.66%}
+	.col-lg-12{ width: 100%}
+	.col-lg-0{width: 0%}
+}
+
+
+/* phải cho các cột vào dòng row, thì mới dược sắp nằm cạnh nhau cho đủ 100%*/
+.row
+{
+	display: flex; flex-wrap: wrap
+}
+/*tất cả các cột đều có đường viền đỏ và đẩy bờ lề vào trong là 15px*/
+[class*="col-"] 
+{
+  padding: 15px;
+  /*border: 1px solid #FF0004; màu của khung container*/
+}
+.img
+{
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  
+	width: 100%;
+	height: cover;
+   border-radius: 10px;
+    display: block;
+	   margin-top: auto;     /* Căn giữa theo chiều ngang */
+    margin-b: auto;    /* Căn giữa theo chiều ngang */
+}
+/* Cách căn full-width cho GIF */
+    .full-width-gif {
+      width: 100%; /* Chiếm toàn bộ chiều rộng của trang */
+      height: auto; /* Giữ tỷ lệ hình ảnh */
+    }
+
+.text-center{ text-align: center}
+
+.mt-50{
+	margin-top: 50px
+}
+#welcome 
+{
+	background-image:url("../images/background-3.gif");
+	height: 500px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */	
+}
+section 
+{
+	margin-top: 10px;
+}
+#welcome 
+.caption
+{
+	width: 50%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7175245098039216) 0%, rgba(0,0,0,0) 67%);
+	height: 500px;
+	padding: 50px;
+	
+}
+.caption h1
+{
+	margin-top: 50px
+}
+/*--- dinh dang trong flex---*/
+.d-flex{ display: flex}
+/*--- dẩy các box trong flexc theo chiều ngang*/
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content:flex-end}
+.justify-content-center{justify-content:center}
+.justify-content-between{justify-content:space-between}
+.justify-content-around{justify-content:space-around}
+/*--- đẩy các cột trong flex theo chiều dọc*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}
+header
+{
+	position: fixed;
+	width: 100%;
+	left: 0; top: 0;
+	z-index:99999
+}
+header nav
+{
+	background: #212121;
+	padding: 25px 0;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	margin-bottom: 10px;
+	position: relative
+}
+nav
+{ padding: 5px 0; background-color:black; }
+.nav .logo
+{
+	height: 10%
+}
+
+nav 
+.container{position: relative}
+nav
+.btn-toggle{position: absolute;right: 0;top: 10px; background-color:#212121; color: white;border:none;font-size: 20px;margin-top: -2%}
+.menu
+{
+margin-top: 10px;
+margin-bottom: 10px;
+	display: none
+}
+.menu ul 
+{
+	margin:1px;
+	padding: 2px;
+	list-style: none
+}
+
+.menu ul li a{
+	text-transform: uppercase;
+	padding: 7px 4px ;
+	color: aliceblue;
+	font-size: 20;
+	margin: 2px;
+	display: block;
+	border-bottom: 1px dotted #ddd;
+	
+	font-family: Merienda;
+}
+.menu ul li a:hover 
+{
+	background-color: #6D6D6D;
+	box-shadow: 0 0 15px 5px rgba(177,177,177,1.00); /* Tạo ánh sáng */
+  transform: scale(1.05); /* Phóng to nhẹ */
+	 border-radius: 8px;
+}
+.nav-icon{	white-space: nowrap; display: none}
+@media(min-width:1025px)
+{
+	
+	.menu{display: block !important}
+	.btn-toggle{display: none;
+	
+	}
+	nav .container,.menu ul 
+	
+	{
+		display: flex;
+	justify-content: space-between;
+		align-items: center;
+	
+	
+	}
+	.menu ul li a
+	{
+		border-bottom: none;
+		padding: 7px 20px
+	}
+	
+	
+}
+@media(min-width:1200px)
+{
+.nav-icon{ display: block !important}	
+}
+/* Định dạng cơ bản cho ô chọn */
+.background-link
+{
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+  color:antiquewhite ;
+ background-color: rgba(227,244,100,0.50);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+/* Hiệu ứng phát sáng khi rê chuột vào */
+.background-link:hover
+{
+  box-shadow: 0 0 15px 5px rgba(177,177,177,1.00); /* Tạo ánh sáng */
+  transform: scale(1.05); /* Phóng to nhẹ */
+}
+.progress-bar
+{
+	background-color: #ddd;
+	border-radius: 10px;
+	height: 15px;
+	margin-top: -16px
+}
+.progress{
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	font-size: 10px; color: #fff;
+	text-align:right;
+	font-weight: 800;
+	padding-right: 5px
+}
+.title-container {
+  text-align: center; /* Căn giữa tiêu đề */
+/*  background-color: # ;  Màu nền (tùy chọn) */
+  padding: 20px 0;
+}
+
+.title {
+  color: white; /* Màu chữ */
+  font-size: 24px; /* Kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+  position: relative; /* Để sử dụng ::before và ::after */
+  display: inline-block; /* Để không chiếm hết chiều ngang */
+}
+
+.title::before,
+.title::after {
+  content: ""; /* Tạo đường kẻ */
+  position: absolute;
+  top: 50%; /* Đặt giữa theo chiều dọc */
+  width: 100px; /* Độ dài của đường kẻ */
+  height: 2px; /* Độ dày của đường kẻ */
+  background-color: #E3F464; /* Màu của đường kẻ */
+}
+
+.title::before {
+  left: -110px; /* Đặt đường kẻ bên trái */
+}
+
+.title::after {
+  right: -110px; /* Đặt đường kẻ bên phải */
+}
+
+
+/* Container */
+.game-container {
+  display: flex; /* Sử dụng Flexbox */
+  flex-wrap: wrap; /* Để các box xuống dòng nếu không đủ chỗ */
+  gap: 20px; /* Khoảng cách giữa các box */
+  justify-content: center; /* Căn giữa các box theo chiều ngang */
+  align-items: flex-start; /* Căn t<strong></strong>heo chiều dọc (bên trên) */
+  padding: 20px; /* Khoảng cách từ container đến viền màn hình */
+
+}
+
+/* Box game */
+.game-box {
+  background-color: #222; /* Màu nền đen */
+  border: 1px solid #333; /* Viền tối */
+  border-radius: 10px; /* Bo góc */
+  overflow: hidden; /* Ẩn phần dư */
+  width: 200px; /* Chiều rộng cố định */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  transition: transform 0.2s ease-in-out; /* Hiệu ứng hover */
+  margin: 10px;
+}
+
+/* Hiệu ứng hover */
+.game-box:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+	
+}
+
+/* Hình ảnh */
+.game-image {
+  width: 100%;
+  height: 100%; /* Đảm bảo lấp đầy khung */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px; /* Bo góc */
+}
+
+/* Phần thông tin */
+.game-info {
+  display: flex;
+  justify-content: space-between; /* Căn đều hai phần */
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #222; /* Nền tối hơn */
+  color: #fff; /* Màu chữ */
+  font-size: 14px;
+}
+
+/* Năm phát hành */
+.year {
+  font-weight: bold;
+}
+
+/* Biểu tượng nền tảng */
+.platforms {	
+  display: flex;
+  gap: 5px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.platform-icon {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+}
+@media(max-width:715px)
+{
+	#welcome 
+.caption
+{
+	width: 60%;
+	}
+}
+@media(max-width:601px)
+{
+	#welcome 
+.caption
+{
+	width: 75%;
+	}
+}
+@media(max-width:488px)
+{
+	#welcome 
+.caption
+{
+	width: 100%;
+	}
+}
+.Ribbon {
+  background-color: #c66; /* Màu nền của thẻ Ribbon (#c66) */
+  width: cover; /* Độ rộng của thẻ Ribbon  */
+  height: auto; /* Chiều cao của thẻ Ribbon  */
+  line-height: 80px; /* Căn chỉnh nội dung (text) theo chiều dọc giữa thẻ Ribbon, vì line-height bằng với chiều cao */
+  font-size: 20px; /* Kích thước chữ là 20px */
+  text-align: center; /* Căn giữa văn bản trong thẻ Ribbon */
+  position: relative; /* Đặt thẻ Ribbon ở vị trí tương đối để có thể dùng các thuộc tính position cho các phần tử con (before và after) */
+  margin: 0px auto; /* Đặt khoảng cách từ trên xuống và căn giữa thẻ Ribbon trong trang */
+  font-family:"Merienda"; /* Font chữ sử dụng là "Merienda"  */
+  color: #fff; /* Màu chữ là màu trắng */
+}
+.Ribbon:after {
+  background-color: #a44; /* Màu nền của các phần tử giả (before và after) (#a44) */
+  width: 50px; /* Độ rộng của mỗi phần tử giả */
+  height:80px; /* Chiều cao của mỗi phần tử giả là auto, giống chiều cao của thẻ Ribbon */
+  content: ''; /* Nội dung của các phần tử giả này không có, chỉ có hiệu ứng tạo viền */
+  display: block; /* Đảm bảo các phần tử giả này hiển thị dưới dạng block */
+  transform: skewY(20deg); /* Đặt các phần tử giả bị nghiêng theo trục Y (nghiêng dọc) với góc 20 độ */
+  position: absolute; /* Đặt các phần tử giả ở vị trí tuyệt đối so với thẻ Ribbon  */
+  z-index: -1; /* Đảm bảo các phần tử giả được hiển thị ở phía sau nội dung của thẻ Ribbon */
+}
+.Ribbon:before
+{
+	  background-color: #a44; /* Màu nền của các phần tử giả (before và after) (#a44) */
+  width: 50px; /* Độ rộng của mỗi phần tử giả */
+  height:80px; /* Chiều cao của mỗi phần tử giả là auto, giống chiều cao của thẻ Ribbon */
+  content: ''; /* Nội dung của các phần tử giả này không có, chỉ có hiệu ứng tạo viền */
+  display: block; /* Đảm bảo các phần tử giả này hiển thị dưới dạng block */
+  transform: skewY(20deg); /* Đặt các phần tử giả bị nghiêng theo trục Y (nghiêng dọc) với góc 20 độ */
+  position: absolute; /* Đặt các phần tử giả ở vị trí tuyệt đối so với thẻ Ribbon  */
+  z-index: -1; /* Đảm bảo các phần tử giả được hiển thị ở phía sau nội dung của thẻ Ribbon */
+
+}
+.Ribbon:before { 
+  top: 10px; /* Đặt phần tử trước ở vị trí cách 10px từ cạnh trên của thẻ Ribbon */
+  left: 0; /* Đặt phần tử trước ở sát bên trái của thẻ Ribbon */
+}
+
+.Ribbon:after {
+  top: -10px; /* Đặt phần tử sau ở vị trí cách 10px từ cạnh trên của thẻ Ribbon, nhưng về phía trên (do top: -10px) */
+  right: 0; /* Đặt phần tử sau ở sát bên phải của thẻ Ribbon */
+}
+.menu-end ul
+{
+	list-style: none;
+	text-align: left;
+			
+}
+/* Footer */
+.footer {
+  text-align: center; /*căn giữa chữ*/
+  padding: 20px;
+}
+
+.footer-links a {
+  color: antiquewhite;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.hover{
+		background-color: #6D6D6D;
+	box-shadow: 0 0 15px 5px rgba(177,177,177,1.00); /* Tạo ánh sáng */
+
+}
+.filter-menu {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+ }
+
+.filter-menu h3 {
+  margin: 0 0 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.sort-options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.sort-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.toggle-switch input 
+{
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
